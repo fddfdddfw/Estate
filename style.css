@@ -9,6 +9,9 @@ section {
   padding: 0;
   box-sizing: border-box;
 }
+.fuoter_frap {
+  position: relative;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
