@@ -19,8 +19,11 @@
   <body>
     <header>
       <nav>
+        <button class="nav__burger">
+          <img src="./src/burger.png" alt="heroburger" class="nav_burger" />
+        </button>
         <img src="./src/IMAGE.svg" alt="minlogo" />
-        <img src="./src/burger.png" alt="heroburger" class="nav_burger" />
+
         <ul class="nav_list">
           <li><a href="">Listings</a></li>
 
@@ -30,6 +33,20 @@
 
           <li><a href="">Our team</a></li>
         </ul>
+        <div class="modal modalToggle" id="modal">
+          <div class="overlay">
+            <button class="nav_close" onclick="modalToggle()">X</button>
+            <ul class="nav_list2">
+              <li><a href="">Listings</a></li>
+
+              <li><a href="">Newsroom</a></li>
+
+              <li><a href="">Contact</a></li>
+
+              <li><a href="">Our team</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -74,7 +91,7 @@
           <div class="wrap2">
             <ul class="listings_list">
               <li class="listings_item">
-                <img src="./src/li1.png" alt="img" width="48px" />
+                <img src="./src/li1.png" alt="img" width="48" />
                 <p class="listings_title1">Stellar locations</p>
                 <p class="listings_title2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -82,7 +99,7 @@
               </li>
 
               <li class="listings_item">
-                <img src="./src/li2.png" alt="img" width="48px" />
+                <img src="./src/li2.png" alt="img" width="48" />
                 <p class="listings_title1">High quality builds</p>
                 <p class="listings_title2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -90,7 +107,7 @@
               </li>
 
               <li class="listings_item">
-                <img src="./src/li3.png" alt="img" width="48px" />
+                <img src="./src/li3.png" alt="img" width="48" />
                 <p class="listings_title1">Expert interior design</p>
                 <p class="listings_title2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -136,8 +153,8 @@
                   <img
                     src="./src/list3.png"
                     alt="img"
-                    width="14.17px"
-                    height="20px"
+                    width="14.17"
+                    height="20"
                   />
                   <p>11</p>
                   <p>rooms</p>
@@ -145,27 +162,17 @@
               </ul>
             </li>
             <li class="store_item">
-              <img src="src/item2.png" alt="img" width="379px" class="img_1" />
+              <img src="src/item2.png" alt="img" width="379" class="img_1" />
               <p class="item__title">Villa</p>
               <p class="item_subtitle">Welford Gardens</p>
               <ul class="list_list">
                 <li class="item_title">
-                  <img
-                    src="./src/list1.png"
-                    alt="img"
-                    width="20px"
-                    height="20px"
-                  />
+                  <img src="./src/list1.png" alt="img" width="20" height="20" />
                   <p>12</p>
                   <p>beds</p>
                 </li>
                 <li class="item_title">
-                  <img
-                    src="./src/list2.png"
-                    alt="img"
-                    width="20px"
-                    height="20px"
-                  />
+                  <img src="./src/list2.png" alt="img" width="20" height="20" />
                   <p>3</p>
                   <p>bathrooms</p>
                 </li>
@@ -173,8 +180,8 @@
                   <img
                     src="./src/list3.png"
                     alt="img"
-                    width="14.17px"
-                    height="20px"
+                    width="14.17"
+                    height="20"
                   />
                   <p>16</p>
                   <p>rooms</p>
@@ -182,27 +189,17 @@
               </ul>
             </li>
             <li class="store_item">
-              <img src="src/item3.png" alt="img" width="379px" class="img_1" />
+              <img src="src/item3.png" alt="img" width="379" class="img_1" />
               <p class="item__title">House</p>
               <p class="item_subtitle">The Grove</p>
               <ul class="list_list">
                 <li class="item_title">
-                  <img
-                    src="./src/list1.png"
-                    alt="img"
-                    width="20px"
-                    height="20px"
-                  />
+                  <img src="./src/list1.png" alt="img" width="20" height="20" />
                   <p>12</p>
                   <p>beds</p>
                 </li>
                 <li class="item_title">
-                  <img
-                    src="./src/list2.png"
-                    alt="img"
-                    width="20px"
-                    height="20px"
-                  />
+                  <img src="./src/list2.png" alt="img" width="20" height="20" />
                   <p>2</p>
                   <p>bathrooms</p>
                 </li>
@@ -210,8 +207,8 @@
                   <img
                     src="./src/list3.png"
                     alt="img"
-                    width="14.17px"
-                    height="20px"
+                    width="14.17"
+                    height="20"
                   />
                   <p>14</p>
                   <p>rooms</p>
@@ -224,22 +221,12 @@
               <p class="item_subtitle">Wallace St.</p>
               <ul class="list_list">
                 <li class="item_title">
-                  <img
-                    src="./src/list1.png"
-                    alt="img"
-                    width="20px"
-                    height="20px"
-                  />
+                  <img src="./src/list1.png" alt="img" width="20" height="20" />
                   <p>1</p>
                   <p>beds</p>
                 </li>
                 <li class="item_title">
-                  <img
-                    src="./src/list2.png"
-                    alt="img"
-                    width="20px"
-                    height="20px"
-                  />
+                  <img src="./src/list2.png" alt="img" width="20" height="20" />
                   <p>2</p>
                   <p>bathrooms</p>
                 </li>
@@ -247,8 +234,8 @@
                   <img
                     src="./src/list3.png"
                     alt="img"
-                    width="14.17px"
-                    height="20px"
+                    width="14.17"
+                    height="20"
                   />
                   <p>8</p>
                   <p>rooms</p>
@@ -265,7 +252,7 @@
                     src="./src/list1.png"
                     alt="img"
                     width="20px"
-                    height="20px"
+                    height="20"
                   />
                   <p>8</p>
                   <p>beds</p>
@@ -344,12 +331,14 @@
               ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et
               nisi ultrices, ut faucibus orci tincidunt.
             </p>
-            <p class="team_text4">View our team <img src="src/Path.png" /></p>
+            <p class="team_text4">
+              View our team <img src="src/Path.png" alt="" />
+            </p>
           </div>
           <div class="team_box2">
             <ul class="team_ul">
               <li class="team_li">
-                <img src="src/team1.jpg" />
+                <img src="src/team1.jpg" alt="" />
                 <div class="team_box3">
                   <p class="team_text">Ava Orn</p>
                   <p class="team_text1">Managing Broker</p>
@@ -357,7 +346,7 @@
               </li>
 
               <li class="team_li">
-                <img src="src/team2.png" />
+                <img src="src/team2.png" alt="" />
                 <div class="team_box3">
                   <p class="team_text">Ella Hessel</p>
                   <p class="team_text1">Agent</p>
@@ -365,7 +354,7 @@
               </li>
 
               <li class="team_li">
-                <img src="src/team3.jpg" />
+                <img src="src/team3.jpg" alt="" />
                 <div class="team_box3">
                   <p class="team_text">Daryl Gislason</p>
                   <p class="team_text1">REALTOR</p>
@@ -373,7 +362,7 @@
               </li>
 
               <li class="team_li">
-                <img src="src/team4.png" />
+                <img src="src/team4.png" alt="" />
                 <div class="team_box3">
                   <p class="team_text">David Sporer</p>
                   <p class="team_text1">Agent</p>
@@ -381,7 +370,7 @@
               </li>
 
               <li class="team_li">
-                <img src="src/team5.png" />
+                <img src="src/team5.png" alt="" />
                 <div class="team_box3">
                   <p class="team_text">Trevor Torphy</p>
                   <p class="team_text1">Agent</p>
@@ -389,7 +378,7 @@
               </li>
 
               <li class="team_li">
-                <img src="src/team6.png" />
+                <img src="src/team6.png" alt="" />
                 <div class="team_box3">
                   <p class="team_text">Amanda Giovanni</p>
                   <p class="team_text1">REALTOR</p>
@@ -404,7 +393,7 @@
         <p class="new_subtitle">Writing from Estate.</p>
         <ul class="new_list">
           <li class="new_titl">
-            <img src="src/new1.png" width="376px" />
+            <img src="src/new1.png" width="376px" alt="" />
             <div class="new_box">
               <p class="new_text1">Press release</p>
               <p class="new_text2">
@@ -414,7 +403,7 @@
             </div>
           </li>
           <li class="new_titl">
-            <img src="src/new2.png" width="376px" />
+            <img src="src/new2.png" width="376px" alt="" />
             <div class="new_box">
               <p class="new_text1">Announcement</p>
               <p class="new_text2">The history of great design</p>
@@ -422,7 +411,7 @@
             </div>
           </li>
           <li class="new_titl">
-            <img src="src/new3.png" width="376px" />
+            <img src="src/new3.png" width="376px" alt="" />
             <div class="new_box">
               <p class="new_text1">Company news</p>
               <p class="new_text2">Designers who changed everything</p>
@@ -430,14 +419,14 @@
             </div>
           </li>
         </ul>
-        <p class="new_text4">Newsroom <img src="src/Path.png" /></p>
+        <p class="new_text4">Newsroom <img src="src/Path.png" alt="" /></p>
       </section>
       <section class="fed">
         <p class="fed_tittle">Testimonials</p>
         <p class="fed_subtitle">What our customers say.</p>
         <ul class="fed_list">
           <li class="fed_item">
-            <img src="src/stars.svg" />
+            <img src="src/stars.svg" alt="" />
             <p class="fed_text1">We found the perfect home!</p>
             <p class="fed_text2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -446,10 +435,12 @@
               libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
               lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
             </p>
-            <p class="fed_text3"><img src="src/line.png" /> Nate Davidsson</p>
+            <p class="fed_text3">
+              <img src="src/line.png" alt="" /> Nate Davidsson
+            </p>
           </li>
           <li class="fed_item">
-            <img src="src/stars1.svg" />
+            <img src="src/stars1.svg" alt="" />
             <p class="fed_text1">We're so happy with Estate.</p>
             <p class="fed_text2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -459,7 +450,9 @@
               lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
             </p>
 
-            <p class="fed_text3"><img src="src/line.png" /> Laura Paulie</p>
+            <p class="fed_text3">
+              <img src="src/line.png" alt="" /> Laura Paulie
+            </p>
           </li>
         </ul>
       </section>
